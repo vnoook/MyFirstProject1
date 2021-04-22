@@ -9,11 +9,14 @@ print('Я загадал число от 1 до 100\n')
 
 while xCh != Ug:
     input_data = input('Введите число: ')
-    Ug = int(input_data)
+    if input_data.isdigit() == False:
+        input_data = 0
+    else:
+        Ug = int(input_data)
 
-    if Ug == 0:
+    if input_data in (0, '0', '00'):
         print('Вы знаете секрет :-)')
-        break
+        exit()
     elif Ug < xCh:
         print('Угадываемое больше Вашего')
     elif Ug > xCh:
