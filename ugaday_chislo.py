@@ -1,11 +1,12 @@
 import random
 
-xCh = random.randint(1, 100)
+xCh = random.randint(1, 101)
 Ug = 0
 
 print('___________________________')
 print('Игра "Угадай число"')
-print('Я загадал число от 1 до 100\n')
+print('Я загадал число от 1 до 100')
+print()
 
 while xCh != Ug:
     input_data = input('Введите число: ')
@@ -25,7 +26,6 @@ while xCh != Ug:
 
 else:
     print('Вы угадали число!!!', xCh)
-
 
 print()
 print('__________!МОЛОДЕЦ!___________')
