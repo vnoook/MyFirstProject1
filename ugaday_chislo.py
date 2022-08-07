@@ -11,7 +11,7 @@ print()
 while xCh != Ug:
     input_data = input('Введите число: ')
 
-    if input_data.isdigit() == False:
+    if not input_data.isdigit():
         input_data = 0
     else:
         Ug = int(input_data)
